@@ -171,7 +171,7 @@ export default function Profile() {
         >
           <AvatarInput>
             {user?.avatar !== null ? (
-              <img src={user.avatar} alt={user.name} />
+              <img src={user?.avatar} alt={user?.name} />
             ) : (
               <div>
                 <p>{user?.name?.charAt(0)}</p>
