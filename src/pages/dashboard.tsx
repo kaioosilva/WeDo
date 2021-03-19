@@ -4,16 +4,19 @@ import Head from 'next/head'
 import Router from 'next/router'
 import Link from 'next/link'
 
+import TodoList from '../components/TodoList'
+
 import { useAuth } from '../hooks/Auth'
 
-import { FiClock, FiPower } from 'react-icons/fi'
+import { FiPower } from 'react-icons/fi'
 import logoImg from '../assets/wedo.png'
 
 import {
   Container,
   Header,
   HeaderContent,
-  Profile
+  Profile,
+  Content
 } from '../styles/pages/dashboard'
 
 const Dashboard: React.FC = () => {
@@ -57,6 +60,10 @@ const Dashboard: React.FC = () => {
           </button>
         </HeaderContent>
       </Header>
+
+      <Content>
+        <TodoList />
+      </Content>
     </Container>
   )
 }

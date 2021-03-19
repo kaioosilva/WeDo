@@ -32,7 +32,6 @@ interface ProfileFormData {
 export default function Profile() {
   const formRef = useRef<FormHandles>(null)
   const { addToast } = useToast()
-  // const history = useHistory()
 
   const { user, updateUser } = useAuth()
 
@@ -130,8 +129,6 @@ export default function Profile() {
         formData.append('timestamp', String((Date.now() / 1000) | 0))
 
         const data = await upload(formData, 'image')
-
-        console.log('data', data)
 
         const avatarUpdatedData = {
           id: user.id,

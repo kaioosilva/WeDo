@@ -59,7 +59,13 @@ export default async (request: VercelRequest, response: VercelResponse) => {
       {
         id
       },
-      { $set: { name: name, email: email, password: newPassword } },
+      {
+        $set: {
+          name: name,
+          email: email,
+          password: newPassword !== '' ? newPassword : user.password
+        }
+      },
       { returnOriginal: false }
     )
 

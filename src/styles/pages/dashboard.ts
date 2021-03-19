@@ -1,8 +1,4 @@
 import styled from 'styled-components'
-import { shade } from 'polished'
-
-import ArrowLeftIcon from '../../assets/ArrowLeftIcon.svg'
-import ArrowRightIcon from '../../assets/ArrowRightIcon.svg'
 
 export const Container = styled.div``
 
@@ -13,18 +9,28 @@ export const Header = styled.header`
 
 export const HeaderContent = styled.div`
   max-width: 1120px;
-  margin: 0 auto;
   display: flex;
+  margin: 0 auto;
   align-items: center;
 
   > img {
     height: 80px;
+    max-width: 80px;
+
+    @media (max-width: 767px) {
+      display: none;
+      visibility: hidden;
+    }
   }
 
   button {
     margin-left: auto;
     background: transparent;
     border: 0;
+
+    @media (max-width: 767px) {
+      margin-right: 1rem;
+    }
 
     svg {
       color: #999591;
@@ -41,7 +47,13 @@ export const HeaderContent = styled.div`
 export const Profile = styled.div`
   display: flex;
   align-items: center;
+
   margin-left: 80px;
+  width: 100%;
+
+  @media (max-width: 767px) {
+    margin-left: 1rem;
+  }
 
   img {
     width: 56px;
@@ -78,5 +90,15 @@ export const Profile = styled.div`
         opacity: 0.8;
       }
     }
+  }
+`
+export const Content = styled.main`
+  max-width: 1120px;
+
+  margin: 64px auto;
+  display: flex;
+
+  @media (max-width: 1024px) {
+    padding: 0 1rem;
   }
 `

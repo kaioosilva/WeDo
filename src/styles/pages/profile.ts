@@ -13,6 +13,7 @@ export const Container = styled.div`
       width: 100%;
       max-width: 1120px;
       margin: 0 auto;
+      padding: 0 1rem;
 
       svg {
         color: #999591;
@@ -36,7 +37,6 @@ export const Content = styled.div`
   justify-content: center;
   margin: -176px auto 0;
 
-  /* This is the same of justify-content: center */
   place-content: center;
 
   width: 100%;
@@ -47,6 +47,7 @@ export const Content = styled.div`
     text-align: center;
     display: flex;
     flex-direction: column;
+    padding: 0 1rem;
 
     h1 {
       margin-bottom: 24px;
