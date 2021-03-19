@@ -135,6 +135,6 @@ export default async (request: VercelRequest, response: VercelResponse) => {
       { returnOriginal: false }
     )
 
-    return response.status(204).json({ message: 'Task deleted' })
+    return response.json({ message: 'Task deleted' })
   }
 }

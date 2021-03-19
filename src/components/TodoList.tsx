@@ -157,6 +157,8 @@ export default function TodoList() {
 
         setTodoList(newList)
 
+        getlistData()
+
         //update item of list
       } else if (value === 2) {
         const newArray = todoList.map((item, index) => {
@@ -173,7 +175,15 @@ export default function TodoList() {
         handleAddTask(id, true, '')
       }
     },
-    [todoList, idList, isNewTask, isAddModalOpen, indexRef, addToast]
+    [
+      todoList,
+      idList,
+      isNewTask,
+      isAddModalOpen,
+      indexRef,
+      addToast,
+      getlistData
+    ]
   )
 
   const handleOnChange = useCallback(

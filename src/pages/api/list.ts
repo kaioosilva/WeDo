@@ -122,6 +122,6 @@ export default async (request: VercelRequest, response: VercelResponse) => {
       id_user
     })
 
-    return response.status(204).json({ message: 'List deleted' })
+    return response.json({ message: 'List deleted' })
   }
 }

@@ -4,7 +4,7 @@
 
 <p align="center">The best way to be more productive and take care of your tasks!</p>
 
-<p align="center">Deployed <a href="https://moveit-next-self-chi.vercel.app">here</a> </p>
+<p align="center">Deployed <a href="https://wedo-omega.vercel.app">here</a> </p>
 
 <p align="center">
   <a href="#%EF%B8%8F-about-the-project">About the project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -16,13 +16,14 @@
 <p align="center">
   <!-- <img alt="Layout" src="https://res.cloudinary.com/eliasgcf/image/upload/v1588811213/GoBarber/Kapture_2020-05-06_at_21.25.26_tijnl5.gif"> -->
 
-  <img alt="Layout" src="https://res.cloudinary.com/kaioosilva/image/upload/v1615203405/moveit_oljiji.gif">
+  <img alt="Layout" src="https://res.cloudinary.com/kaioosilva/image/upload/v1616173772/wedo_eq8885.gif">
 
 </p>
 
 ## 💇🏻‍♂️ About the project
 
-Track your time, be more productive and take care of your health. Move.it was developed for time management, as in the pomodoro technique, dividing the work into 25 minute periods. After that time it releases a challenge, which is some stretching for the body or exercise for the eyes. Each challenge has its xp points and, accumulating the points you level up.
+If you're looking for a todo list app, one that works on all your devices, tracks your productivity, and lets you geek out on organizing and analyzing your life, WeDo is it.
+If you need an app to organize your tasks, WeDo will keep you happy and productive.
 
 ## 🚀 Technologies
 
