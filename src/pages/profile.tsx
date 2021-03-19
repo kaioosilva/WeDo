@@ -170,7 +170,7 @@ export default function Profile() {
           onSubmit={handleSubmit}
         >
           <AvatarInput>
-            {user?.avatar !== undefined ? (
+            {user?.avatar !== null ? (
               <img src={user.avatar} alt={user.name} />
             ) : (
               <div>

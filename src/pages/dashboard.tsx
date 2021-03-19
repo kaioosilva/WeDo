@@ -39,7 +39,7 @@ const Dashboard: React.FC = () => {
           <img src={logoImg} alt="WeDo" />
 
           <Profile>
-            {user?.avatar !== undefined ? (
+            {user?.avatar !== null ? (
               <img src={user.avatar} alt={user.name} />
             ) : (
               <div>
