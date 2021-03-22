@@ -8,6 +8,15 @@ export const Container = styled.div`
 
   display: flex;
   align-items: stretch;
+
+  @media (max-width: 1024px) {
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (max-width: 321px) {
+    margin-top: 1rem;
+  }
 `
 
 export const Content = styled.div`
@@ -47,6 +56,10 @@ export const AnimationContainer = styled.div`
     width: 340px;
     text-align: center;
 
+    @media (max-width: 321px) {
+      padding: 0 1rem;
+    }
+
     h1 {
       margin-bottom: 24px;
     }
@@ -61,6 +74,10 @@ export const AnimationContainer = styled.div`
       &:hover {
         color: ${shade(0.2, '#f4ede8')};
       }
+    }
+
+    @media (max-width: 321px) {
+      margin: 32px 0;
     }
   }
 
@@ -81,6 +98,14 @@ export const AnimationContainer = styled.div`
     &:hover {
       color: ${shade(0.2, '#2fd0d6')};
     }
+
+    @media (max-width: 376px) {
+      margin-top: 0;
+    }
+
+    @media (max-width: 361px) {
+      margin-bottom: 1rem;
+    }
   }
 `
 
@@ -88,4 +113,9 @@ export const Background = styled.div`
   flex: 1;
   background: url(${signUpBackgroundImg}) no-repeat center;
   background-size: cover;
+
+  @media (max-width: 1024px) {
+    display: none;
+    visibility: hidden;
+  }
 `
