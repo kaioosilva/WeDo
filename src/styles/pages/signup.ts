@@ -56,10 +56,6 @@ export const AnimationContainer = styled.div`
     width: 340px;
     text-align: center;
 
-    @media (max-width: 321px) {
-      padding: 0 1rem;
-    }
-
     h1 {
       margin-bottom: 24px;
     }
@@ -76,8 +72,12 @@ export const AnimationContainer = styled.div`
       }
     }
 
-    @media (max-width: 321px) {
+    @media (max-width: 540px) {
       margin: 32px 0;
+    }
+
+    @media (max-width: 321px) {
+      padding: 0 1rem;
     }
   }
 
